@@ -1,15 +1,15 @@
-import setuptools
+ import setuptools
 
 setuptools.setup(
-    name="styleformer",
-    version="0.1",
-    author="Prithiviraj Damodaran",
+    name="gramformer",
+    version="1.0",
+    author="prithiviraj damodaran",
     author_email="",
-    description="Styleformer",
-    long_description="A Neural Language Style Transfer framework to transfer natural language text smoothly between fine-grained language styles like formal/casual, active/passive, and many more. Created by Prithiviraj Damodaran. Open to pull requests and other forms of collaboration.",
-    url="https://github.com/PrithivirajDamodaran/Styleformer.git",
+    description="Gramformer",
+    long_description="A framework for detecting, highlighting and correcting grammatical errors on natural language text",
+    url="https://github.com/PrithivirajDamodaran/Gramformer.git",
     packages=setuptools.find_packages(),
-    install_requires=['transformers', 'sentencepiece', 'python-Levenshtein', 'fuzzywuzzy'],
+    install_requires=['transformers', 'sentencepiece==0.1.95', 'python-Levenshtein==0.12.2', 'fuzzywuzzy==0.18.0',  'tokenizers==0.10.2', 'fsspec==2021.5.0', 'lm-scorer', 'errant'],
     classifiers=[
         "Programming Language :: Python :: 3.7",
         "License :: Apache 2.0",
